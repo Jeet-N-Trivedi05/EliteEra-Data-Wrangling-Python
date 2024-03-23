@@ -1,2 +1,3 @@
 # EliteEra-Data-Wrangling-Python
-EliteEra Financials Solution is a fintech company specializing in providing financial services and insights to its customers. 
+This project involves wrangling financial transaction data to ensure its quality and usability for analysis. The dataset includes transaction IDs, dates, amounts, merchant names, and other transaction details. Data wrangling tasks include standardizing date formats, handling missing merchant values, resolving anomalies in refund statuses, and extracting location details. Additionally, new columns will be generated to calculate customer spending, identify high-value customers, and analyze transaction patterns. By addressing these tasks, the dataset will be prepared for comprehensive analysis and insights.
+
