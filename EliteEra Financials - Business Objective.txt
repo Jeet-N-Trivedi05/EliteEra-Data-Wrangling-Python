@@ -1,0 +1,73 @@
+Business Objectives:-
+EliteEra Financials Solution is a fintech company specializing in providing financial services and insights to its customers. 
+
+The primary objectives include:-
+
+1)Enhanced Customer Experience:
+Ensure accurate and reliable data for customer transactions to enhance their overall experience.
+
+2)Risk Mitigation:
+Identify and address potential fraudulent transactions through improved data accuracy and consistency.
+
+3)Business Intelligence:
+Utilize clean data for comprehensive business intelligence, enabling data-driven decision-making.
+
+4)Marketing and Rewards Optimization:
+Leverage accurate transaction data to optimize marketing strategies and reward programs.
+
+5)Operational Efficiency:
+Streamline internal processes by having a consistent and reliable dataset
+
+Basic Knowledge of Columns:-
+
+	Transaction_ID: Unique identifier for each transaction.
+	Date: Date of the transaction.
+	Amount: Transaction amount in currency.
+	Merchant: Name of the merchant involved.
+	Category: Category of the transaction (e.g., Grocery, Entertainment).
+	Card_Type: Type of credit card used.
+	Customer_ID: Unique identifier for each customer.
+	Location: Location of the transaction.
+	Payment_Method: Method used for payment.
+	Refund_Status: Indicates whether the transaction is a refund.
+	Fraudulent: Indicates whether the transaction is potentially fraudulent.
+	Reward_Points: Number of reward points earned.
+	Device_Type: Type of device used for the transaction.
+
+Data Cleaning Tasks:-
+
+	Data Cleaning Tasks:
+
+		1. Standardize Date Format: Convert all dates to a consistent format (e.g., YYYY-MM-DD).
+		2. Handle Missing Values in Merchant Column: Impute missing values or consider removal based on impact.
+		3. Resolve Anomalies in Refund Status: Ensure 'Refund_Status' has consistent values.
+		4. Handle Unknown Payment Method and Device Type: Address entries with 'Unknown' values in the 'Payment_Method' and 'Device_Type' columns by either imputation or removal based on context.
+		5. Resolve Anomalies in Reward Points: Review and correct anomalies in the 'Reward_Points' column.
+		6. Standardize Location Format: Split the 'Location' column into separate 'City' and 'State' columns for better analysis and visualization.
+		7. Extract Day, Month, and Year from Date: Extract day, month, and year components from the 'Date' column to create separate columns for each.
+		8. Categorize Transaction Time: Create a new column to categorize transaction times into different periods of the day 
+		(e.g., morning, afternoon, evening, night).
+		9. Check and Handle Inconsistencies in Date and Time: Check for inconsistencies or anomalies in the date and time components and resolve them if necessary.
+		10. Standardize Categorical Values: Ensure consistent categories for 'Card_Type', 'Category', 'Payment_Method', 'Refund_Status', and 'Device_Type'.
+		11. Handle Outliers in Amount: Use statistical methods to identify and handle outliers in the 'Amount' column appropriately.
+		12. Resolve Duplicate Transaction IDs and Customer IDs: Investigate and resolve any duplicate entries in the 'Transaction_ID' and 'Customer_ID' columns.
+
+	New Column Generation Tasks:
+
+		1. Extract City and State from Location: Split the 'Location' column into separate 'City' and 'State' columns for better analysis and visualization.
+		2. Calculate Total Amount Spent by Each Customer: Aggregate the transaction amounts for each customer and create a new column representing the total amount spent by each customer.
+		3. Identify High-Value Customers: Create a new column to classify customers as 'High-Value' based on their total spending compared to the average spending.
+		4. Calculate Transaction Frequency: Calculate the frequency of transactions for each customer and create a new column representing the transaction frequency.
+		5. Calculate Days Since Last Transaction: Create a new column indicating the number of days since the customer's last transaction, based on their 'Customer_ID' and 'Date' columns.
+		6. Calculate Average Transaction Amount by Merchant: Aggregate the transaction amounts for each merchant and create a new column representing the average transaction amount for each merchant.
+		7. Categorize Transaction Amount: Create a new column to categorize transaction amounts into different ranges (e.g., low, medium, high).
+
+
+
+
+
+
+
+
+
+
